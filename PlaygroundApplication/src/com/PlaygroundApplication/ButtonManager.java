@@ -91,7 +91,7 @@ public class ButtonManager
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 String queuedKids = objectManager.getPlaysite(playSite).showQueuedKids();
-                rightLabels.get(whichLabel).setText(queuedKids);
+                rightLabels.get(whichLabel).setText(playSite + ": " + queuedKids);
             }
         });
         return jbutton;
